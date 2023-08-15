@@ -1,1 +1,0 @@
-const usia = prompt("Masukkan umur anda")
