@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Object and Function</h1>
+  </body>
+  <script>
+    function Facil(nama, kelas, gender) {
+      this.nama = nama;
+      this.kelas = kelas;
+      this.gender = gender;
+      this.helloStudent = (nama, gender) => {
+        const title = gender === "L" ? "Mas" : "Mba";
+        console.log(`Hallo ${title} ${nama}, Selamat Malam !!`);
+      };
+    }
+    const facil_1 = new Facil("Siti", "FWA", "Perempuan");
+    console.log(facil_1);
+    facil_1.helloStudent("Hendar", "L");
+  </script>
+</html>

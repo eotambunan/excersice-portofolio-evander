@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class</title>
+  </head>
+  <body>
+    <h1>Class</h1>
+  </body>
+  <script>
+    class Student {
+      #nama;
+      #kelas;
+      #gender;
+
+      constructor(nama, kelas, gender) {
+        this.nama = nama;
+        this.kelas = kelas;
+        this.gender = gender;
+      }
+      helloSiswa() {
+        console.log(`Hallo ${this.name}, Selamat Malam`);
+      }
+    }
+
+    const student_func_1 = new Student("Opick", "Bisnis Analisis", "Laki-laki");
+    const student_func_2 = new Student("Kautsar", "Product Manager", "Laki-laki");
+    const student_func_3 = new Student("Fahmi", "Backrnd Developer", "Laki-laki");
+    const student_func_4 = new Student("Sinta", "QA", "Perempuan");
+
+    console.log(student_func_1);
+    console.log(student_func_2);
+    console.log(student_func_3);
+    console.log(student_func_4);
+
+    student_func_1.helloSiswa();
+    student_func_2.helloSiswa();
+    student_func_3.helloSiswa();
+    student_func_4.helloSiswa();
+  </script>
+</html>
