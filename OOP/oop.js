@@ -51,3 +51,25 @@ console.log(persons);
 
 // 7. panggil fungsi Person.find(name) dan muncul kan object person berdasarkan nama yang di input.
 wanita.cobaCari("Madeline");
+
+class Student extends Person {
+    setClass(param) {
+        //1. argumant set nilai class
+        this.kelas=param
+        return this;
+    }
+    setSekolah(param){
+        this.sekolah=param
+        return this
+    }
+    // 4. tambahkan method setSekolah
+    
+}
+
+// 2. Set class dengan bentuk builder pattern
+const student = new Student("Bejo","L");
+student.setClass("Kelas 2")
+student.setSekolah("SDN 2 Bandung")
+persons.push(student)
+// 3. Tampilkan student
+console.log(persons);
